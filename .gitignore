@@ -2,7 +2,7 @@
 .DS_Store
 backup
 chroma
-venv/
+venv
 .venv/
 
 
@@ -17,4 +17,4 @@ __pycache__/
 .DS_Store
 *.log
 
-data/
+data
