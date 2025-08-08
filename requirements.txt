@@ -6,3 +6,6 @@ boto3
 langchain-community
 pypdf
 streamlit
+plotly 
+pandas
+statsmodels
