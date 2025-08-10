@@ -85,7 +85,7 @@ mkdir -p data chroma
 
 5. **Run the application**
 ```bash
-streamlit run main.py
+streamlit run app.py
 ```
 
 The application will be available at `http://localhost:8501`
@@ -94,7 +94,7 @@ The application will be available at `http://localhost:8501`
 
 ```
 advanced-rag-assistant/
-├── main.py                 # Main Streamlit application
+├── app.py                 # Main Streamlit application
 ├── get_embedding_function.py  # Embedding configuration
 ├── requirements.txt        # Python dependencies
 ├── styles.css             # Custom CSS (optional)
@@ -234,7 +234,7 @@ ollama pull nomic-embed-text
 
 ### Adding New Document Types
 
-1. Update `SUPPORTED_EXTENSIONS` in `main.py`
+1. Update `SUPPORTED_EXTENSIONS` in `app.py`
 2. Create loader function (e.g., `load_single_docx`)
 3. Add processing logic in `process_uploaded_file`
 4. Update metadata handling for new file type
