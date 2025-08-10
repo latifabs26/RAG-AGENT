@@ -266,18 +266,6 @@ The system integrates with:
 - **ChromaDB**: Vector database with metadata storage
 - **LangChain**: Framework for enhanced RAG capabilities
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes with appropriate tests
-4. Update documentation if needed
-5. Submit a pull request
-
-## License
-
-This project is open source. Please check the repository for license details.
-
 ## Support
 
 For issues and questions:
@@ -295,4 +283,4 @@ For issues and questions:
 
 ---
 
-**Built with ❤️ for intelligent document analysis with memory**
+**Built by Ben Slama Latifa, Final-year Data Science Engineering Student**
