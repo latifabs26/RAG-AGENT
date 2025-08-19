@@ -1,6 +1,9 @@
-# Advanced RAG Assistant 🔍
+# 🧠 Synapse - Advanced RAG Assistant 🔍 
 
-An intelligent document analysis system built with Streamlit, LangChain, and Ollama that provides enhanced chat, search, summarization, and analytics capabilities with memory-aware interactions.
+An intelligent document analysis system built with Streamlit, LangChain, and Ollama that provides enhanced chat, search, summarization, and analytics capabilities with memory-aware interactions. **Runs completely locally - no external API calls, maximum privacy.**
+
+[![Demo](https://img.shields.io/badge/🚀-Live%20Demo-brightgreen)](https://ragagent-clouddemo-mpjungkw6uehg7eexsaznf.streamlit.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Local%20Version-blue)](https://github.com/latifabs26/SYNAPSE_RAG-AGENT)
 
 ## Features
 
@@ -16,6 +19,7 @@ An intelligent document analysis system built with Streamlit, LangChain, and Oll
 - **Memory-enhanced responses** - references previous conversations when relevant
 - Source attribution with clickable references
 - Export chat sessions for later review
+- **Complete privacy** - no data leaves your machine
 
 📊 **Document Analytics**
 - Database statistics and comprehensive metrics
@@ -59,8 +63,8 @@ The system uses an **Enhanced RAG** architecture with intelligent query processi
 
 1. **Clone the repository**
 ```bash
-git clone <your-repo-url>
-cd advanced-rag-assistant
+git clone https://github.com/latifabs26/SYNAPSE_RAG-AGENT.git
+cd SYNAPSE_RAG-AGENT
 ```
 
 2. **Install Python dependencies**
@@ -85,7 +89,7 @@ mkdir -p data chroma
 
 5. **Run the application**
 ```bash
-streamlit run app.py
+streamlit run main.py
 ```
 
 The application will be available at `http://localhost:8501`
@@ -93,8 +97,8 @@ The application will be available at `http://localhost:8501`
 ## Project Structure
 
 ```
-advanced-rag-assistant/
-├── app.py                 # Main Streamlit application
+synapse-rag-assistant/
+├── main.py                 # Main Streamlit application
 ├── get_embedding_function.py  # Embedding configuration
 ├── requirements.txt        # Python dependencies
 ├── styles.css             # Custom CSS (optional)
@@ -122,12 +126,13 @@ embeddings = BedrockEmbeddings(
 )
 ```
 
-### Model Configuration
+### Model Configuration (All Local)
 
-- **Chat Model**: Mistral (via Ollama) - handles query processing and response generation
+- **Chat Model**: Mistral (via Ollama) - handles query processing and response generation 
 - **Embedding Model**: nomic-embed-text (via Ollama) - creates document embeddings
-- **Vector Store**: ChromaDB (local persistence with metadata)
+- **Vector Store**: ChromaDB ( persistence with metadata)
 - **Memory**: In-session chat history with context preservation
+- **No External APIs**: Everything runs on your machine
 
 ## Usage Guide
 
@@ -234,7 +239,7 @@ ollama pull nomic-embed-text
 
 ### Adding New Document Types
 
-1. Update `SUPPORTED_EXTENSIONS` in `app.py`
+1. Update `SUPPORTED_EXTENSIONS` in `main.py`
 2. Create loader function (e.g., `load_single_docx`)
 3. Add processing logic in `process_uploaded_file`
 4. Update metadata handling for new file type
