@@ -35,7 +35,7 @@ An intelligent document analysis system built with Streamlit, LangChain, and Oll
 
 📝 **Smart Summarization**
 - **Context-aware summaries** - considers conversation history for better relevance
-- All documents or specific document summaries
+- Specific document summaries
 - Structured summary output with key insights
 - Downloadable summary reports
 
